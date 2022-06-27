@@ -36,7 +36,7 @@ resource "aws_s3_bucket_policy" "allow_access_from_another_account" {
                 "s3:GetObject"
             ],
             "Resource": [
-                "arn:aws:s3:::mapfre-gitops-jamapla/*"
+                "arn:aws:s3:::mapfre-gitops-abullido481/*"
             ]
         }
     ]

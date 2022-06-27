@@ -39,7 +39,7 @@ pipeline {
 
         stage ("Ansible test") {
             steps {
-                sh "ansible-playbook ansible-reto-kairos-p3.yml --check"
+                sh "ansible-playbook reto-s3.yml --check"
             }
         }
 
@@ -50,7 +50,7 @@ pipeline {
                 }
             }
             steps {
-                sh "ansible-playbook ansible-reto-kairos-p3.yml"
+                sh "ansible-playbook reto-s3.yml"
             }
         }
     }

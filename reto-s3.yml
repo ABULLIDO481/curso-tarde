@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+  - name: Creacion S3 modo web mas index.html
+    amazon.aws.aws_s3:
+      bucket: mapfre-gitops-abullido481
+      object: index-temp.html 
+      src: index.html
+      permission: public-read
+      mode: put
+      
