@@ -1,6 +1,6 @@
 terraform {
   backend "local" {
-    path = "/opt/buckets/jamapla/terraform.ftstate"
+    path = "/opt/buckets/abullido481/terraform.ftstate"
   }
 }
 
