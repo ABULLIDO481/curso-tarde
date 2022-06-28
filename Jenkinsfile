@@ -20,6 +20,13 @@ pipeline {
         }
 
         stage ("Terraform plan") {
+          when {
+                not {
+                    anyOf {
+                        branch 'main'
+                    }
+                }
+            }
             steps {
                 sh "terraform plan"
             }
