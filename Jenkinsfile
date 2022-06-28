@@ -13,6 +13,12 @@ pipeline {
             }
         }
 
+        stage ("Terraform import") {
+            steps {
+                sh "terraform import aws_s3_bucket.mapfre-gitops-abullido481 s3-bucket-abullido481
+            }
+        }
+
         stage ("Terraform plan") {
             steps {
                 sh "terraform plan"
